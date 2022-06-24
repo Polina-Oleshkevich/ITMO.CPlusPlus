@@ -1,0 +1,3 @@
+﻿  ITMO.CPlusPlus.Lab1.2.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Lab1.2\ITMO.CPlusPlus.Lab1.2.cpp(18,8): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ITMO.CPlusPlus.Lab1.2.vcxproj -> C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\Debug\ITMO.CPlusPlus.Lab1.2.exe
