@@ -1,0 +1,4 @@
+﻿  ITMO.CPlusPlus.Lab3.1.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Lab3.1\ITMO.CPlusPlus.Lab3.1.cpp(25): warning C4717: 'privet': recursive on all control paths, function will cause runtime stack overflow
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Lab3.1\ITMO.CPlusPlus.Lab3.1.cpp(29): warning C4717: 'privet': recursive on all control paths, function will cause runtime stack overflow
+  ITMO.CPlusPlus.Lab3.1.vcxproj -> C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\x64\Debug\ITMO.CPlusPlus.Lab3.1.exe
