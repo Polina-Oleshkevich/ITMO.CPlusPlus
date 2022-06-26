@@ -1,0 +1,8 @@
+﻿  ITMO.CPlusPlus.Test3.1.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(11,8): error C2601: 'lengthOne': local function definitions are illegal
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(7): message : this line contains a '{' which has not yet been matched
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(18,8): error C2601: 'pentagonArea': local function definitions are illegal
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(7): message : this line contains a '{' which has not yet been matched
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(40,5): error C2601: 'main': local function definitions are illegal
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(7): message : this line contains a '{' which has not yet been matched
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test3.1\ITMO.CPlusPlus.Test3.1.cpp(7): fatal error C1075: '{': no matching token found
