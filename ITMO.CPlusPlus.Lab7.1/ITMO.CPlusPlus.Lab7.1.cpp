@@ -9,11 +9,12 @@ struct Distance
 {
     int feet;
     double inches;
-    void ShowDist(Distance d)
+    void ShowDist()
     {
-        cout << d.feet << "\'-" << d.inches << "\"\n";
+        cout << feet << "\'-" << inches << "\"\n";
     }
 };
+
 Distance AddDist(const Distance& d1, const Distance& d2)
 { 
     Distance d;
@@ -35,16 +36,19 @@ cout << "¬ведите число дюймов: ";
 cin >> d.inches;
 return d; 
 }
-
+void ShowDist(Distance d)
+{
+    cout << d.feet << "\'-" << d.inches << "\"\n";
+}
 int main()
 {
-   
+    setlocale(LC_ALL, "Russian");
     Distance d1 = InputDist();
     Distance d2 = { 1, 6.25 }; 
     Distance d3 = AddDist(d1, d2);
-    d1.ShowDist(d1);
-    d2.ShowDist(d2);
-    d3.ShowDist(d3);
+    d1.ShowDist();
+    d2.ShowDist();
+    d3.ShowDist();
     int n;
     cout << "¬ведите размер массива рассто€ний ";
     cin >> n;
