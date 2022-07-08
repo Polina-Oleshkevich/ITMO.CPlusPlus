@@ -1,0 +1,8 @@
+﻿  ITMO.CPlusPlus.Test10.1.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(81,10): error C2086: 'Dot *Triangle::a': redefinition
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(82,10): error C2086: 'Dot *Triangle::b': redefinition
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(83,10): error C2086: 'Dot *Triangle::c': redefinition
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(84,10): error C2040: 'Triangle::c0': 'Dot *' differs in levels of indirection from 'Dot'
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(85,12): error C2086: 'double Triangle::ab': redefinition
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(86,12): error C2086: 'double Triangle::bc': redefinition
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test10.1\ITMO.CPlusPlus.Test10.1.cpp(87,12): error C2086: 'double Triangle::ac': redefinition
