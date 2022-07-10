@@ -1,2 +1,3 @@
 ﻿  ITMO.CPlusPlus.Test8.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test8\ITMO.CPlusPlus.Test8.cpp(113): warning C4717: 'operator+': recursive on all control paths, function will cause runtime stack overflow
   ITMO.CPlusPlus.Test8.vcxproj -> C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\x64\Debug\ITMO.CPlusPlus.Test8.exe
