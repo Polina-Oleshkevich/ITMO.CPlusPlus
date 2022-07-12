@@ -13,15 +13,19 @@ public:
         std::string second_name,  
         //  оличество учебных часов за семестр у преподавател€ 
         unsigned int work_time
-    ) : human(  
-        last_name,    
-        name,        
-        second_name   
-    ) {  
+    ) : human(last_name, name, second_name) 
+    {  
         this->work_time = work_time;    
     }  
+
+    std::string get_info() const
+    {
+        std::ostringstream full_name;
+        full_name << human::get_info() << get_work_time();
+        return full_name.str();
+    }
         // ѕолучение количества учебных часов 
-    unsigned int get_work_time() 
+    unsigned int get_work_time() const
     {    
         return this->work_time;  
     }  
