@@ -1,0 +1,12 @@
+﻿  ITMO.CPlusPlus.Test14.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test14\ITMO.CPlusPlus.Test14.cpp(13,13): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Test14\ITMO.CPlusPlus.Test14.cpp(49): message : see reference to function template instantiation 'void sorting<double>(T [],int)' being compiled
+          with
+          [
+              T=double
+          ]
+  ITMO.CPlusPlus.Test14.vcxproj -> C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\x64\Debug\ITMO.CPlusPlus.Test14.exe
