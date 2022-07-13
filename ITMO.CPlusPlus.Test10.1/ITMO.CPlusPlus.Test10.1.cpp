@@ -13,51 +13,47 @@ class Triangle
 {
 
 public:
-    Triangle(Dot* a, Dot* b) : a{ a }, b{ b }
-    {
-        c00 = Dot(); //композиция
-        ab = a->distanceTo(*b);
-        bc = b->distanceTo(c00);
-        ac = a->distanceTo(c00);
-        if (IsNotTr(ab, bc, ac))
-            throw Triangle::ExNotTr("Triangle.");
-    }
-
+   
     Triangle(Dot* a, Dot* b, Dot* c) : a{ a }, b{ b }, c{ c }
     {
-        ab = a->distanceTo(*b); //агрегация
-        bc = b->distanceTo(*c);
-        ac = a->distanceTo(*c);
-        if (IsNotTr(ab, bc, ac))
-            throw Triangle::ExNotTr("Triangle.");
+
     }
 
     double get_ab()
     {
-        return ab;
+        return a->distanceTo(*b);
     }
     double get_bc()
     {
-        return bc;
+        return b->distanceTo(*c);
     }
     double get_ac()
     {
-        return ac;
+        return a->distanceTo(*c);
     }
 
     boolean IsNotTr(double ab, double bc, double ac)
     {
-        if (ac >= ab + bc or ab >= bc + ac or ab >= ab + ac)
-            return true;
+        if (ac >= ab + bc or ab >= bc + ac or ab >= ab + ac) return true;
         return false;
     }
     double TrianglePer()
     {
+        double ab, bc, ac;
+        ab = a->distanceTo(*b);
+        bc = b->distanceTo(*c);
+        ac = a->distanceTo(*c);
+        if (IsNotTr(ab, bc, ac))
+            throw Triangle::ExNotTr("Triangle");
         return ab + bc + ac;
     }
 
     double TriangleAr()
     {
+        double ab, bc, ac;
+        ab = a->distanceTo(*b);
+        bc = b->distanceTo(*c);
+        ac = a->distanceTo(*c);
         double p = TrianglePer() / 2;
         return sqrt(p * (p - ab) * (p - bc) * (p - ac));
     }
@@ -75,9 +71,7 @@ private:
     Dot* b;
     Dot* c;
     Dot c00;
-    double ab;
-    double bc;
-    double ac;
+   
 };
    
 int main()
@@ -91,15 +85,11 @@ int main()
     Dot c(cx, cy);
     try
     {
-        Triangle tr(&a, &b);
+        Triangle tr(&a, &b, &c);
         cout << "AB : " << tr.get_ab() << " BC : " << tr.get_bc() << " AC : " << tr.get_ac() << endl;
         cout << "Периметр треугольника : " << tr.TrianglePer() << endl;
         cout << "Площадь треугольника : " << tr.TriangleAr() << endl;
 
-        Triangle triangle(&a, &b, &c);
-        cout << "AB : " << triangle.get_ab() << " BC : " << triangle.get_bc() << " AC : " << triangle.get_ac() << endl;
-        cout << "Периметр треугольника : " << triangle.TrianglePer() << endl;
-        cout << "Площадь треугольника : " << triangle.TriangleAr() << endl;
     }
     catch (Triangle::ExNotTr& ex)
     {
