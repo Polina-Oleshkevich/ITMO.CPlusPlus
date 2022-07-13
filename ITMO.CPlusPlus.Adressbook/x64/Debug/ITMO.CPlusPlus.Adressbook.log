@@ -1,0 +1,5 @@
+﻿  ITMO.CPlusPlus.Adressbook.cpp
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Adressbook\teacher.h(13,94): error C2661: 'human::human': no overloaded function takes 2 arguments
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Adressbook\ITMO.CPlusPlus.Adressbook.cpp(10,7): error C2059: syntax error: 'using namespace'
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Adressbook\ITMO.CPlusPlus.Adressbook.cpp(10,20): error C2238: unexpected token(s) preceding ';'
+C:\Users\User\source\repos\ITMO.CPlusPlus\ITMO.CPlusPlus\ITMO.CPlusPlus.Adressbook\student.h(12): fatal error C1075: '{': no matching token found
