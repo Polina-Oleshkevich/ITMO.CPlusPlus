@@ -1,33 +1,31 @@
 #pragma once
-#include <iostream>
 #include <string>
-#include <sstream>
 #include <fstream>
+#include <sstream>
+
 using namespace std;
 
 class human
 {
 public:
-	human(string lastName, string name, string phone, string address) 
-	{
-		this->lastName = lastName;
-		this->name = name;
-		this->phone = phone;
-		this->address = address;
-	}
-	string GetlastName()
+	human(string lastName, string name)	: 
+		lastName(lastName), name(name) {}
+
+	string GetlastName() const
 	{
 		return lastName;
 	}
-	string Getname()
+	string Getname() const
 	{
 		return name;
 	}
+	virtual string GetSt() const = 0;
+
 	void Setphone(string phone)
 	{
 		this->phone = phone;
 	}
-	string Getphone()
+	string Getphone() const
 	{
 		return phone;
 	}
@@ -35,30 +33,31 @@ public:
 	{
 		this->address = address;
 	}
-	string Getaddress()
+	string Getaddress() const
 	{
 		return address;
 	}
+	
 
-	string get_full_name()
+	virtual string GetInfo() const
 	{
-		ostringstream full_name;
-		full_name << this->lastName << " " << this->name << " " << this->phone << " " << this->address << " ";
-		return full_name.str();
+		std::ostringstream full_info;
+		full_info << GetlastName() << " " << Getname() << " " << GetSt() << "---" << Getphone() << Getaddress() << " ";
+		return full_info.str();
 	}
 	
 	// Запись данных в файл
-	void Save()
+	virtual void Save() const
 	{
 		ofstream fout("human.txt", ios::app);
-		fout << Getname() << " " << GetlastName() << " " << Getphone() << " " << Getaddress() << " ";
+		fout << Getname() << " " << GetlastName() << " " << GetSt() << "---" << Getphone() << " " << Getaddress() << " ";
 		fout << endl;
 		fout.close();
 	}
 private:
 	string name;
 	string lastName;
-	string phone = " ";
-	string address = " ";
+	string phone = "not";
+	string address = "not";
 
 };

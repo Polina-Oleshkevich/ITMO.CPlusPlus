@@ -7,15 +7,15 @@ using namespace std;
 class course
 {
 public:
-	course(string nameCourse) : nameCourse(nameCourse) {}
+	course(string nameCourse) : 
+		nameCourse(nameCourse) {}
 
-	string getInfocourse()
+	string getInfocourse() const
 		{
-			ostringstream full_name;
-			full_name << this->nameCourse << " ";
-			return full_name.str();
+			std::ostringstream full_info;
+			full_info << this->nameCourse << " ";
+			return full_info.str();
 		}
 	private:
 		string nameCourse;
-	
 };

@@ -1,10 +1,8 @@
 #pragma once
-#include <iostream>
 #include <string>
 #include "human.h"
 #include <sstream>
 #include <vector>
-
 
 using namespace std;
 
@@ -16,23 +14,28 @@ public:
         human(lastName, name) {      
         this->scores = scores;      
     }  
-    string get_full_name()
+     string GetSt() const
     {
-        ostringstream full_name;
-        full_name << human::get_full_name() << " " << get_average_score() << " ";
-        return full_name.str();
+        return "---";
+    }
+    string GetInfo() const
+    {
+        std::ostringstream full_info;
+        full_info << human::GetInfo() << " " << get_average_score() << " ";
+        return full_info.str();
     }
 
     // Запись данных в файл
-    void Save()
+    void Save() const
     {
         human::Save();
         ofstream fout("human.txt", ios::app);
-        fout << get_average_score() << " ";
+        fout << " " << get_average_score() << " ";
         fout << endl;
         fout.close();
+    }
 
-        float get_average_score()
+        float get_average_score() const
         {    
             unsigned int count_scores = this->scores.size();  
             unsigned int sum_scores = 0;
